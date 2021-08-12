@@ -1,0 +1,6 @@
+books\Book.class
+books\Author.class
+books\AuthorRating.class
+books\CorsFilter.class
+books\Category.class
+books\LibraryUtils.class
