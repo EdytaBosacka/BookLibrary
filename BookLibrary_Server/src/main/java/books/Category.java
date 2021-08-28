@@ -38,8 +38,7 @@ public class Category {
 					}
 				}
 			}
-			return Response.ok(resultList.toJSONString(), MediaType.APPLICATION_JSON).
-					header("Access-Control-Allow-Origin", "*").build();
+			return Response.ok(resultList.toJSONString(), MediaType.APPLICATION_JSON).build();
 		} else {
 			return Response.status(Response.Status.NOT_FOUND).entity("File not found").build();
 		}
