@@ -1,10 +1,12 @@
 #sidebar {
     width: 250px;
 	min-width:250px;
+	position: fixed;
   }
   #sidebar .pro-sidebar {
     height: 100vH;
-
+	width: 100%;
+    min-width: 100%;
   }
   #sidebar .closemenu {
     color: #000;
@@ -18,14 +20,10 @@
     top: 0px;
     cursor: pointer;
   }
-  #sidebar .pro-sidebar {
-    width: 100%;
-    min-width: 100%;
-  }
 
   #sidebar .pro-sidebar.collapsed {
-    width: 80px;
-    min-width: 80px;
+    width: 90px;
+    min-width: 90px;
   }
   #sidebar .pro-sidebar-inner {
 	background-color: #fff;
@@ -57,9 +55,9 @@
 	font-size: 16px;
   }
   #sidebar .pro-sidebar.collapsed .pro-icon-wrapper{
-          width: 50px;
-          min-width: 50px;
-          height: 50px;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
   }
   #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
     color: #000;
