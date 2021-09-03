@@ -1,6 +1,7 @@
 #books {
 	height: 90vH;
 	width: 100%;
+	padding-left: 150px;
 }
 
 .grid{
@@ -34,10 +35,21 @@
   border: 1px rgba(255,231,220,1);
 }
 
+.dropdown {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+	font-family: Courier New;
+}
+
 h3 {
 	margin-top: 25px;
 	margin-bottom: 10px;
 	font-size: 17px;
+	font-family: Courier New;
 }
 
 h4 {
@@ -51,7 +63,7 @@ h4 {
 
 h5 {
 	margin-top: 10px;
-	margin-left: 155px;
+	margin-left: 150px;
 	text-align: center;
 	font-style: italic;
 }

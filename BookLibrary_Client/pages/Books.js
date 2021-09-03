@@ -65,6 +65,9 @@ class Books extends React.Component {
 				...provided,
 				borderBottom: '1px solid #dfdfdf',
 				backgroundColor: state.isSelected ? 'rgba(255,231,220,0.5)' : 'white',
+				':hover': {
+					backgroundColor: 'rgba(255,231,220,0.2)',
+				},
 				color: '#000000',
 				padding: 20,
 				width: 400,
@@ -73,7 +76,7 @@ class Books extends React.Component {
 				...provided,// none of react-select's styles are passed to <Control />
 				width: 400,
 				border: '2px solid #dfdfdf',
-				position: 'relative',
+				//position: 'relative',
 				boxShadow: 'none',
 					'&:hover': {
 					border: '2px solid #ffe7dc',
@@ -90,33 +93,30 @@ class Books extends React.Component {
 					width: "8px"
 				},
 				"::-webkit-scrollbar-track": {
-     background: "#f4f4f4"
-   },
-   "::-webkit-scrollbar-thumb": {
-     background: "rgba(255,231,220,1)",
-	 "border-radius": "20px"
-   },
-   "::-webkit-scrollbar-thumb:hover": {
-     background: "rgba(255,231,220,1)"
-   }
-	}),
+					background: "#f4f4f4"
+				},
+				"::-webkit-scrollbar-thumb": {
+					background: "rgba(255,231,220,1)",
+				"border-radius": "20px"
+				},
+				"::-webkit-scrollbar-thumb:hover": {
+					background: "rgba(255,231,220,1)"
+				}
+			}),
+			singleValue: (provided, state) => {
+				const opacity = state.isDisabled ? 0.5 : 1;
+				const transition = 'opacity 300ms';
 
-  
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
-
-    return { ...provided, opacity, transition };
-  }
-  
+				return { ...provided, opacity, transition };
+			}
 		};
 		
 	return (
 		<div id="books">
 			<h2> Books by Category </h2>
-			
-			<Select styles={customStyles} options={this.state.categories} onChange={this.handleChange.bind(this)} />
-			
+			<div className="dropdown">
+				<Select styles={customStyles} options={this.state.categories} onChange={this.handleChange.bind(this)} />
+			</div>
 			<div className = "grid">
 				{this.state.books.map((book) => {
 					return (
