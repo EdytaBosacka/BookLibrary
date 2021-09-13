@@ -1,0 +1,12 @@
+#isbn{
+  height: 90vH;
+  width: 100%;
+  padding-left: 150px;	
+}
+
+.searchByISBN {
+  position: center;
+  font-size: 20px;
+  border: 1px rgba(255,231,220,1); 
+}
+

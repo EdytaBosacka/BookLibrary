@@ -42,3 +42,20 @@
     transform: rotate(360deg);
   }
 }
+
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f4f4f4;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 4px solid #f4f4f4;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #929292;
+}
