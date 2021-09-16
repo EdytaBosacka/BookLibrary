@@ -1,6 +1,9 @@
 import React, {useState} from "react";
-import "./SearchByISBN.css";
 import SearchField from "react-search-field";
+import "./SearchByISBN.css";
+
+
+
 
 class SearchByISBN extends React.Component {
 	
@@ -23,19 +26,16 @@ class SearchByISBN extends React.Component {
 		}))
 		
 	}
+
+
   
-  
-	
 	render(){
-	
-	const searchStyle = {
-	  width: 1,
-	};
+		
 	return (
 		<div id="isbn">
 			<h2> Search book by ISBN </h2>
 			<div className="searchByISBN">
-				<SearchField style={searchStyle} onSearchClick={this.onSearch.bind(this)} />
+				<SearchField placeholder="Select..."				onSubmit={this.onSearch.bind(this)}/>
 			</div>
 			
 		</div>
