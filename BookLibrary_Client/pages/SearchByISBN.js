@@ -39,12 +39,14 @@ class SearchByISBN extends React.Component {
 		<div id="isbn">
 			<h2> Search book by ISBN </h2>
 			<div className="searchByISBN">
-				<SearchField placeholder="Search..." onSearchClick={this.onSearch.bind(this)}/>
+				<SearchField placeholder="Search..." onSearchClick={this.onSearch.bind(this)} onEnter={this.onSearch.bind(this)} />
 			</div>
 			{this.state.error ? <h3 className="error"> {this.state.error} </h3> : null}
 			{this.state.book.industryIdentifiers ? <div className="isbnCard"> 
 							
+							<div className="imageContainer">
 							{this.state.book.imageLinks ? <img className="isbnBookImage" src={this.state.book.imageLinks.thumbnail} alt="No image" /> : null}
+							</div>
 							<div className="bookInfo">
 							{this.state.book.title ? <h3 className="text"> {this.state.book.title} </h3> : null}
 							{this.state.book.subtitle ? <h5 className="text"> {this.state.book.subtitle} </h5> : null}

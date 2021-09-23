@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Books.css";
 import { Dropdown } from 'semantic-ui-react';
 import Select from 'react-select';
+import StarRatings from 'react-star-ratings';
 
 class Books extends React.Component {
 	
@@ -47,11 +48,21 @@ class Books extends React.Component {
 				publisher: book.publisher,
 				publishedDate: book.publishedDate,
 				imageLink: book.imageLinks.thumbnail,
+				rating: book.averageRating,
+				isbn: book.industryIdentifiers[0].identifier
 			}))
 			
 			this.setState({ books: booksByCategory });
 			console.log(this.state.books);
 		}))
+		
+	}
+	
+	changeRating(newRating, bookIsbn) {
+		fetch('http://localhost:8080/BookLibraryManagement/api/book/' + bookIsbn + '/' + newRating, {
+			method: 'PUT',
+			headers: { 'Content-Type': 'application/json'					}
+		})
 		
 	}
   
@@ -121,13 +132,21 @@ class Books extends React.Component {
 				{this.state.books.map((book) => {
 					return (
 						<div  className="bookCard">
+						<div>
+							<div>
 							<img className="bookImage" src={book.imageLink} alt="No image" />
-							<h3> {book.title} </h3>
-							<h5> {book.subtitle} </h5>
-							{book.authors ? <h4> Authors: {book.authors} </h4> : null}
-							{book.publisher ? <h4> Publisher: {book.publisher} </h4> : null}
-							{book.publishedDate ? <h4> Publication date: {book.publishedDate} </h4> : null}
-							
+							</div>
+							<div className="bookInformation">
+							<h3 className="text"> {book.title} </h3>
+							{book.subtitle ? <h5 className="text"> {book.subtitle} </h5> : null}
+							{book.authors ? <h4 className="text"> Authors: {book.authors} </h4> : null}
+							{book.publisher ? <h4 className="text"> Publisher: {book.publisher} </h4> : null}
+							{book.publishedDate ? <h4 className="text"> Publication date: {book.publishedDate} </h4> : null}
+							</div>
+							</div>
+							<div className="stars">
+								<StarRatings rating={book.rating} starDimension="30px" starRatedColor="#ffa7b6" starHoverColor="#ff8da1" changeRating={this.changeRating.bind(this)} numberOfStars={5} name={book.isbn}/>
+							</div>
 						</div>
 					);
 				})}
