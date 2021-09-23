@@ -31,6 +31,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.9,
+    "ratingsCount": 6,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=7tkN1CYzn2cC&pg=PP1&dq=java&hl=&cd=1&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=7tkN1CYzn2cC&dq=java&hl=&source=gbs_api",
@@ -241,6 +243,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=UEdjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.0,
+    "ratingsCount": 18,
     "language": "pl",
     "previewLink": "http://books.google.pl/books?id=UEdjAgAAQBAJ&pg=PA852&dq=java&hl=&cd=4&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=UEdjAgAAQBAJ&source=gbs_api",
@@ -336,6 +340,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=mVNjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 5.0,
+    "ratingsCount": 12,
     "language": "pl",
     "previewLink": "http://books.google.pl/books?id=mVNjAgAAQBAJ&printsec=frontcover&dq=java&hl=&cd=5&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=mVNjAgAAQBAJ&source=gbs_api",
@@ -567,6 +573,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=biMiAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=biMiAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
+	"averageRating": 3.2,
+    "ratingsCount": 6,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=biMiAQAAIAAJ&q=java&dq=java&hl=&cd=8&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=biMiAQAAIAAJ&dq=java&hl=&source=gbs_api",
@@ -633,6 +641,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=u67rbsVqB1oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=u67rbsVqB1oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.7,
+    "ratingsCount": 8,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=u67rbsVqB1oC&printsec=frontcover&dq=java&hl=&cd=9&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=u67rbsVqB1oC&dq=java&hl=&source=gbs_api",
@@ -703,6 +713,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=87totx4p3ZcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=87totx4p3ZcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 2.4,
+    "ratingsCount": 3,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=87totx4p3ZcC&printsec=frontcover&dq=java&hl=&cd=10&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=87totx4p3ZcC&dq=java&hl=&source=gbs_api",
@@ -773,6 +785,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=FqRxixxvLwIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=FqRxixxvLwIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.9,
+    "ratingsCount": 12,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=FqRxixxvLwIC&printsec=frontcover&dq=java&hl=&cd=11&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=FqRxixxvLwIC&dq=java&hl=&source=gbs_api",
@@ -839,6 +853,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=N1IiAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=N1IiAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
+	"averageRating": 3.1,
+    "ratingsCount": 4,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=N1IiAQAAIAAJ&q=java&dq=java&hl=&cd=12&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=N1IiAQAAIAAJ&dq=java&hl=&source=gbs_api",
@@ -904,6 +920,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=av5eoHNYRqsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=av5eoHNYRqsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 2.7,
+    "ratingsCount": 17,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=av5eoHNYRqsC&printsec=frontcover&dq=java&hl=&cd=13&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=av5eoHNYRqsC&dq=java&hl=&source=gbs_api",
@@ -1042,6 +1060,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=JIpRKUQSJnIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=JIpRKUQSJnIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.6,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=JIpRKUQSJnIC&printsec=frontcover&dq=java&hl=&cd=15&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=JIpRKUQSJnIC&dq=java&hl=&source=gbs_api",
@@ -1115,6 +1135,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=fZAuh8LfFGUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=fZAuh8LfFGUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.8,
+    "ratingsCount": 20,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=fZAuh8LfFGUC&printsec=frontcover&dq=java&hl=&cd=16&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=fZAuh8LfFGUC&dq=java&hl=&source=gbs_api",
@@ -1259,6 +1281,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=PkFjAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=PkFjAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.2,
+    "ratingsCount": 12,
     "language": "pl",
     "previewLink": "http://books.google.pl/books?id=PkFjAgAAQBAJ&pg=PT481&dq=java&hl=&cd=18&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=PkFjAgAAQBAJ&source=gbs_api",
@@ -1428,6 +1452,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=8y9MDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=8y9MDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.8,
+    "ratingsCount": 22,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=8y9MDgAAQBAJ&printsec=frontcover&dq=java&hl=&cd=20&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=8y9MDgAAQBAJ&source=gbs_api",
@@ -1560,7 +1586,7 @@
    "etag": "84Dg+i7GiPU",
    "selfLink": "https://www.googleapis.com/books/v1/volumes/uIVJiAPlBq0C",
    "volumeInfo": {
-    "title": "深入浅出 Java",
+    "title": "???? Java",
     "subtitle": "",
     "authors": [
      "Kathy Sierra",
@@ -1666,6 +1692,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=L7HoaI4yyREC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=L7HoaI4yyREC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
+	"averageRating": 4.6,
+    "ratingsCount": 4,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=L7HoaI4yyREC&q=java&dq=java&hl=&cd=23&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=L7HoaI4yyREC&dq=java&hl=&source=gbs_api",
@@ -1726,6 +1754,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=_-dCAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=_-dCAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.2,
+    "ratingsCount": 18,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=_-dCAAAAcAAJ&printsec=frontcover&dq=java&hl=&cd=24&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=_-dCAAAAcAAJ&source=gbs_api",
@@ -1796,6 +1826,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=qXayo7k3oakC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=qXayo7k3oakC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 2.3,
+    "ratingsCount": 7,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=qXayo7k3oakC&printsec=frontcover&dq=java&hl=&cd=25&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=qXayo7k3oakC&dq=java&hl=&source=gbs_api",
@@ -1867,6 +1899,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=8M3F_sSSvWkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=8M3F_sSSvWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.5,
+    "ratingsCount": 18,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=8M3F_sSSvWkC&printsec=frontcover&dq=java&hl=&cd=26&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=8M3F_sSSvWkC&dq=java&hl=&source=gbs_api",
@@ -1937,6 +1971,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=bQChhKjCdCoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=bQChhKjCdCoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.1,
+    "ratingsCount": 35,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=bQChhKjCdCoC&printsec=frontcover&dq=java&hl=&cd=27&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=bQChhKjCdCoC&dq=java&hl=&source=gbs_api",
@@ -2007,6 +2043,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=XiHIIp_AICUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=XiHIIp_AICUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 3.9,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=XiHIIp_AICUC&printsec=frontcover&dq=java&hl=&cd=28&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=XiHIIp_AICUC&dq=java&hl=&source=gbs_api",
@@ -2147,6 +2185,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=aCkNegj6NnoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=aCkNegj6NnoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 2.6,
+    "ratingsCount": 8,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=aCkNegj6NnoC&printsec=frontcover&dq=java&hl=&cd=30&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=aCkNegj6NnoC&dq=java&hl=&source=gbs_api",
@@ -2208,6 +2248,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=w7BmPTFgBXIC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=w7BmPTFgBXIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
+	"averageRating": 3.6,
+    "ratingsCount": 19,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=w7BmPTFgBXIC&q=java&dq=java&hl=&cd=31&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=w7BmPTFgBXIC&dq=java&hl=&source=gbs_api",
@@ -2276,6 +2318,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=7S4ZpTR0DGwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=7S4ZpTR0DGwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 2.0,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=7S4ZpTR0DGwC&printsec=frontcover&dq=java&hl=&cd=32&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=7S4ZpTR0DGwC&dq=java&hl=&source=gbs_api",
@@ -2413,6 +2457,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=AKzMBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=AKzMBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 5.0,
+    "ratingsCount": 4,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=AKzMBQAAQBAJ&printsec=frontcover&dq=java&hl=&cd=34&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=AKzMBQAAQBAJ&source=gbs_api",
@@ -2581,6 +2627,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=2pKCnc6-UAEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=2pKCnc6-UAEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.5,
+    "ratingsCount": 22,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=2pKCnc6-UAEC&printsec=frontcover&dq=java&hl=&cd=36&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=2pKCnc6-UAEC&source=gbs_api",
@@ -2665,6 +2713,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=WYrpzP8U3XIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=WYrpzP8U3XIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.2,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=WYrpzP8U3XIC&pg=PA407&dq=java&hl=&cd=37&source=gbs_api",
     "infoLink": "https://play.google.com/store/books/details?id=WYrpzP8U3XIC&source=gbs_api",
@@ -2833,6 +2883,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=AXgLAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=AXgLAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
+	"averageRating": 4.6,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=AXgLAQAAMAAJ&q=java&dq=java&hl=&cd=39&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=AXgLAQAAMAAJ&dq=java&hl=&source=gbs_api",
@@ -2900,6 +2952,8 @@
      "smallThumbnail": "http://books.google.com/books/content?id=T-Z8HKgIi5EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
      "thumbnail": "http://books.google.com/books/content?id=T-Z8HKgIi5EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
+	"averageRating": 4.8,
+    "ratingsCount": 10,
     "language": "en",
     "previewLink": "http://books.google.pl/books?id=T-Z8HKgIi5EC&printsec=frontcover&dq=java&hl=&cd=40&source=gbs_api",
     "infoLink": "http://books.google.pl/books?id=T-Z8HKgIi5EC&dq=java&hl=&source=gbs_api",
