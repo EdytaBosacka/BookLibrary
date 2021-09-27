@@ -49,6 +49,7 @@ class Books extends React.Component {
 				publishedDate: book.publishedDate,
 				imageLink: book.imageLinks.thumbnail,
 				rating: book.averageRating,
+				ratingsCount: book.ratingsCount,
 				isbn: book.industryIdentifiers[0].identifier
 			}))
 			
@@ -145,8 +146,11 @@ class Books extends React.Component {
 							</div>
 							</div>
 							<div className="stars">
+								<div className="invisibleVotes"/> 
 								<StarRatings rating={book.rating} starDimension="30px" starRatedColor="#ffa7b6" starHoverColor="#ff8da1" changeRating={this.changeRating.bind(this)} numberOfStars={5} name={book.isbn}/>
+								{book.ratingsCount ? <h4 className="votes"> {book.ratingsCount} Votes </h4> : null}
 							</div>
+							
 						</div>
 					);
 				})}
