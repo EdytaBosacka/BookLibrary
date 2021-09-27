@@ -1,6 +1,7 @@
 package books;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,11 +20,10 @@ public class LibraryUtils {
 	public JSONObject readFile() {
 		JSONParser jsonParser = new JSONParser();
 
-		ClassLoader classLoader = getClass().getClassLoader();
-		InputStream inputStream = classLoader.getResourceAsStream("books.json");
-
-		try (InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
-
+		try {
+			File resourcesDirectory = new File("src/main/resources/books.json");
+			InputStream inputStream = new FileInputStream(resourcesDirectory);
+			InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
 			Object obj = jsonParser.parse(streamReader);
 			return (JSONObject) obj;
 
@@ -41,7 +41,7 @@ public class LibraryUtils {
 	public void writeToFile(JSONObject json) {
 		FileWriter myWriter;
 		try {
-			File resourcesDirectory = new File("src/main/resources/books2.json");
+			File resourcesDirectory = new File("src/main/resources/books.json");
 			myWriter = new FileWriter(resourcesDirectory.getAbsolutePath());
 			json.writeJSONString(myWriter);
 			myWriter.close();
