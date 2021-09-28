@@ -24,7 +24,7 @@ class Books extends React.Component {
 			}))	
 			
 			this.setState({ categories: categoriesList })
-			//console.log(this.state.books);
+			console.log(this.state.books);
 		}))
 		.catch((error) => {
 			console.error(error);
@@ -64,6 +64,20 @@ class Books extends React.Component {
 			method: 'PUT',
 			headers: { 'Content-Type': 'application/json'					}
 		})
+		
+		let booksCopy = [...this.state.books];
+		
+		booksCopy.forEach(function (value, i) {
+			let book = {...booksCopy[i]};
+			if(book.isbn == bookIsbn)
+			{
+				book.rating = (book.rating * book.ratingsCount + newRating)/(book.ratingsCount + 1);
+				book.ratingsCount++;
+				booksCopy[i] = book;
+			}
+		});
+		this.setState({books: booksCopy});
+		
 		
 	}
   

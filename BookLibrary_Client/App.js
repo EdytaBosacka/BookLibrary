@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SideBar from './components/SideBar';
+import Home from './pages/Home';
 import Books from './pages/Books';
 import SearchByISBN from './pages/SearchByISBN';
 import {
@@ -15,6 +16,7 @@ function App() {
 				<Switch>
 					<Route path='/books' component={Books} />
 					<Route path='/isbn' component={SearchByISBN} />
+					<Route path='/' component={Home} />
 				</Switch>
 	</div>
   );
