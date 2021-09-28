@@ -1,6 +1,7 @@
 package books;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 
 import javax.ws.rs.GET;
@@ -13,10 +14,11 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 @Path("/rating")
-public class AuthorRating {
+public class Rating {
 
 	@GET
-	public Response getBookByCategory() {
+	@Path("/authors")
+	public Response getAuthorRating() {
 
 		LibraryUtils utils = new LibraryUtils();
 		JSONObject bookJson = utils.readFile();
@@ -58,5 +60,45 @@ public class AuthorRating {
 		} else {
 			return Response.status(Response.Status.NOT_FOUND).entity("File not found").build();
 		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	@GET
+	@Path("/books")
+	public Response getBookRating() {
+		
+		LibraryUtils utils = new LibraryUtils();
+		JSONObject bookJson = utils.readFile();
+		
+		if (bookJson != null) {
+			JSONArray bookList = (JSONArray) bookJson.get("items");
+			JSONArray resultList = new JSONArray();
+			bookList.sort(new Comparator<Object>() {
+				
+				@Override
+				public int compare(Object book1, Object book2) {
+					JSONObject volumeInfo1 = (JSONObject) ((JSONObject) book1).get("volumeInfo");
+					JSONObject volumeInfo2 = (JSONObject) ((JSONObject) book2).get("volumeInfo");
+					Double book1Rating = (Double) volumeInfo1.get("averageRating");
+					Double book2Rating = (Double) volumeInfo2.get("averageRating");
+					if (book1Rating < book2Rating) {
+						return 1;
+					}else if(book1Rating > book2Rating) {
+						return -1;
+					}else {
+						return 0;
+					}
+				}
+			 });
+			for (Object book : bookList) {
+				JSONObject volumeInfo = (JSONObject) ((JSONObject) book).get("volumeInfo");
+				resultList.add(volumeInfo);
+			}
+			
+			return Response.ok(resultList.toJSONString(), MediaType.APPLICATION_JSON).build();
+		}else {
+			return Response.status(Response.Status.NOT_FOUND).entity("File not found").build();
+		}
+		
 	}
 }
