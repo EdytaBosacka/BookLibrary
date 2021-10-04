@@ -1,12 +1,11 @@
 #sidebar {
-    width: 250px;
-	min-width:250px;
+	max-width:250px;
 	position: fixed;
+	z-index:1001;
   }
   #sidebar .pro-sidebar {
     height: 100vH;
-	width: 100%;
-    min-width: 100%;
+	font-family: Copperplate, Copperplate Gothic Light, fantasy;
   }
   #sidebar .closemenu {
     color: #000;
@@ -24,6 +23,7 @@
   #sidebar .pro-sidebar.collapsed {
     width: 90px;
     min-width: 90px;
+	max-width: 90px;
   }
   #sidebar .pro-sidebar-inner {
 	background-color: #fff;

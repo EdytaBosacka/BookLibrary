@@ -3,6 +3,7 @@ import "./Home.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import StarRatings from 'react-star-ratings';
+import Typewriter from 'typewriter-effect/dist/core';
 
 class Home extends React.Component {
 	
@@ -42,7 +43,7 @@ class Home extends React.Component {
 		const responsive = {
 			desktop: {
 				breakpoint: { max: 3000, min: 1024 },
-				items: 5.5,
+				items: 5,
 				slidesToSlide: 1 // optional, default to 1.
 			},
 			tablet: {
@@ -57,11 +58,22 @@ class Home extends React.Component {
 			}
 		};
 
+		var app = document.getElementById('type');
+	
+	var typewriter = new Typewriter(app, {
+		delay: 500,
+	});
+	typewriter
+		.typeString('Book Library')
+		.pauseFor(300)
+		.pauseFor(1000)
+		.start();
 		
 	return (
+	
 		<div id="home">
-		<h1> hhh </h1>
-			<Carousel className="carousel"  infinite={false} responsive={responsive}>
+		<div id="type" className="type"/>
+			<Carousel className="carousel"   infinite={true} responsive={responsive}  autoPlay={true} autoPlaySpeed={5000} keyBoardControl={true}>
 				{this.state.books.map((book) => {
 					return (
 						<div className="homeCard">
@@ -70,8 +82,8 @@ class Home extends React.Component {
 							<img className="bookPicture" src={book.imageLink} alt="No image" />
 							</div>
 							<div className="bookInformation">
-							<h3 className="text"> {book.title} </h3>
-							{book.subtitle ? <h5 className="text"> {book.subtitle} </h5> : null}
+							<h3 className="title"> {book.title} </h3>
+							{book.subtitle ? <h5 className="title"> {book.subtitle} </h5> : null}
 							</div>
 							</div>
 							
