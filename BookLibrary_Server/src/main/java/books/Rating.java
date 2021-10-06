@@ -33,7 +33,7 @@ public class Rating {
 				JSONArray authors = (JSONArray) volumeInfo.get("authors");
 				Double rating = (Double) volumeInfo.get("averageRating");
 
-				if (rating != null) {
+				if (rating != null && authors !=null) {
 					for (Object a : authors) {
 						String authorName = (String) a;
 						Author author;
