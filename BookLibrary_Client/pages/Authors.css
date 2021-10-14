@@ -6,3 +6,30 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.authorName{
+	margin-left: 0; 
+	margin-right: auto;
+}
+
+.averageRating{
+	margin-left: 0; 
+	margin-right: auto;
+	
+}
+
+.authorsBooks{
+	color: black;
+	background-color: #fcfcfc;
+	border: 10px rgba(255,231,220,1);
+	border-radius: 20px;
+	height: 200px;
+	width: 900px;
+	display: grid;
+	grid-template-columns: 400px repeat(auto-fill, 290px) 10px;
+	grid-gap: 0px;
+	justify-content: center;
+	padding: initial;
+	align-items: center;
+}
+

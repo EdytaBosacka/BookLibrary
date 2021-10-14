@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import SearchField from "react-search-field";
+import Collapsible from 'react-collapsible';
 import "./Authors.css";
+import StarRatings from 'react-star-ratings';
+import { BsChevronDown } from "react-icons/bs";
 
 class Authors extends React.Component {
 	
@@ -28,28 +31,42 @@ class Authors extends React.Component {
  
 	render(){
 		
+		const style = {
+		color: 'black',
+		backgroundColor:"#f7f7f7",
+		padding: '10px',
+		marginTop: '20px',
+		border: '10px rgba(255,231,220,1)',
+		borderRadius: '40px',
+		height: "50px",
+		width: "900px",
+		display: "grid",
+		gridTemplateColumns: "400px repeat(auto-fill, 290px) 100px 10px",
+		gridGap: "0px",
+		justifyContent: "center",
+		padding: "initial",
+		alignItems:"center",
+		};
+		
+		
 		return (
 			<div id="authors">
 			<h2> Authors Rating </h2>
-			</div>
+			{this.state.authors.map((author) => {
+				return(
+			
+			<Collapsible  trigger={[<div className="authorName"> {author.author} </div>, <StarRatings rating={author.rating} starDimension="30px" starRatedColor="#ffa7b6" starHoverColor="#ff8da1"  numberOfStars={5} />, <div className="averageRating"> {Math.round(author.rating*100)/100} </div>, <BsChevronDown color="#959595" size={18} stroke-width={1}/>]} triggerStyle={style}>
+
+				<div className="authorsBooks">
+                
+				</div>				
+		
+			</Collapsible>
+			);
+			})
+			}
 			
 			</div>
-			{this.state.error ? <h3 className="error"> {this.state.error} </h3> : null}
-			{this.state.book.industryIdentifiers ? <div className="isbnCard"> 
-							
-							<div className="imageContainer">
-							{this.state.book.imageLinks ? <img className="isbnBookImage" src={this.state.book.imageLinks.thumbnail} alt="No image" /> : null}
-							</div>
-							<div className="bookInfo">
-							{this.state.book.title ? <h3 className="text"> {this.state.book.title} </h3> : null}
-							{this.state.book.subtitle ? <h5 className="text"> {this.state.book.subtitle} </h5> : null}
-							{this.state.book.authors ? <h4 className="text"> Authors: {this.state.book.authors.join(', ')} </h4> : null}
-							{this.state.book.description ? <h4 className="description"> Description: {this.state.book.description} </h4> : null}
-							{this.state.book.publisher ? <h4 className="text"> Publisher: {this.state.book.publisher} </h4> : null}
-							{this.state.book.publishedDate ? <h4 className="text"> Publication date: {this.state.book.publishedDate} </h4> : null}
-							</div>
-							
-			</div> : null}
 		);
 	}
 }
