@@ -37,8 +37,10 @@ class Authors extends React.Component {
 		.then((response) => response.json())
 		.then((data => {
 			const bookList = data.map((book) => ({
-				bookTitle: book.title,
-				imageLink: book.imageLinks.thumbnail,	
+				title: book.title,
+				imageLink: book.imageLinks.thumbnail,
+				pageCount: book.pageCount,	
+				isbnNumber: book.industryIdentifiers[0].identifier,
 			}))	
 			
 			let newMap = new Map(this.state.authorsBooks);
@@ -78,11 +80,24 @@ class Authors extends React.Component {
 			<Collapsible  onOpening = {()=> this.getAuthorsBooks(author.author)} trigger={[<div className="authorName"> {author.author} </div>, <StarRatings rating={author.rating} starDimension="30px" starRatedColor="#ffa7b6" starHoverColor="#ff8da1"  numberOfStars={5} />, <div className="averageRating"> {Math.round(author.rating*100)/100} </div>, <BsChevronDown color="#959595" size={18} stroke-width={1}/>]} triggerStyle={style}>
 
 				<div className="authorsBooks">
-                {this.state.authorsBooks.get(author.author) ?
-					this.state.authorsBooks.get(author.author).map((book) =>{
-					return (<img className="bookImage" src={book.imageLink} alt="No image" />);
-				})
-				:null}
+					{this.state.authorsBooks.get(author.author) ?
+						this.state.authorsBooks.get(author.author).map((book) =>{
+							return (
+							    <div>
+								
+								<img className="bookCover" src={book.imageLink} alt="No image" />
+								<div className = "booksInformation">
+								<h4 className="text"> <i> {book.title} </i> </h4>
+								<h4 className="text"> Page count: {book.pageCount} </h4>
+								<h4 className="text"> ISBN number: {book.isbnNumber} </h4>
+								</div>	
+								
+								</div>
+									
+							);
+						})
+					:null}
+						
 				</div>				
 		
 			</Collapsible>

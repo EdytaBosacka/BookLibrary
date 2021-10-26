@@ -82,7 +82,6 @@ class Books extends React.Component {
 	}
   
   
-	
 	render(){
 		
 		const customStyles = {
@@ -96,7 +95,7 @@ class Books extends React.Component {
 				},
 				color: '#000000',
 				padding: 20,
-				width: 400,
+				width: 390,
 			}),
 			control: (provided) => ({
 				...provided,// none of react-select's styles are passed to <Control />
