@@ -4,3 +4,4 @@ Application consists of 4 tabs:
 1. <b> Home </b> - it shows carousel widget with book covers. <br>
 <br>![BookLibrary](https://user-images.githubusercontent.com/33400631/139923879-08a50d9c-5f0c-4731-9b46-01cb2a67d8d0.gif)
 2. <b> Books by category </b> - the page includes books information filtered by category. It allows a user to rate books by clicking on star rating widget. <br>
+![BooksByCategory](https://user-images.githubusercontent.com/33400631/139930593-c441d0f8-661c-42b0-a1a5-da09672a0071.gif)
